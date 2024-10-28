@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="/">PostGIS Map</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="/profile">Profile</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="bg-primary text-white text-center py-5">
+        <div class="container">
+            <h1 class="display-4">My Profile</h1>
+        </div>
+    </header>
+
+    <!-- Profile Content -->
+    <div class="container my-5 text-center text-black">
+        <div class="row justify-content-center">
+            <!-- Profile Photo -->
+            <div class="col-md-4 mb-4">
+                <img src="{{ url_for('static', filename='foto_dila.jpg') }}" alt="Profile Photo"
+                    class="img-fluid rounded-circle" width="200">
+            </div>
+        </div>
+
+        <p><strong>Name:</strong> Dila Ayu Prastita</p>
+        <p><strong>Email:</strong> <a href="mailto:dila.121140075@student.itera.ac.id"
+                class="text-black">dila.121140075@student.itera.ac.id</a></p>
+        <p><strong>GitHub:</strong> <a href="https://github.com/DilaAyuPrastita" target="_blank"
+                class="text-black">github.com/DilaAyuPrastita</a></p>
+        <p> I am a seventh-semester Informatics Engineering student at ITERA currently taking the Geographic Information
+            Systems course. I am currently working on a practical assignment about spatial data visualization on the
+            web. This project involves utilizing web technologies to display and analyze geographic data, enhancing user
+            interaction and understanding of spatial information.
+        </p>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Dila Ayu Prastita. Informatics Engineering at ITERA.</p>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
